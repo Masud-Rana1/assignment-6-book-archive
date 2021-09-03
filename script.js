@@ -12,7 +12,7 @@ searchButton.addEventListener('click', ()=>{
       //clear 
   foundNum.innerHTML = "";
   bookDetails.innerHTML = "";
-    let url = `http://openlibrary.org/search.json?q=${search}`;
+    let url = `https://openlibrary.org/search.json?q=${search}`;
     fetch(url)
     .then(res => res.json())
     .then((data) => dataShow(data))
